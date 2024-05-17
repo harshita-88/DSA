@@ -1,0 +1,26 @@
+  Ques 1 : Implementing Array as Stack having only push and pop methods : 
+
+Class MyStack{
+int top;
+int[] arr = new int[1000];
+ MyStack(){
+    top = -1;
+ }
+void push(int a){
+ if( top < arr.length - 1) {
+    arr[++top] = a;
+ }
+else {
+ sysout("Stack Overflow")
+}
+}
+
+int pop(){
+ if(top >= 0){
+    return arr[top--];
+ }
+else{
+return -1;
+}
+}
+}
